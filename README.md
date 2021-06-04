@@ -21,4 +21,9 @@ Windows 10 user's root directory, which is typically `C:\Users\{your windows use
 4.  Save and close `.profile` file. Then close and re-open Git Bash, type `python --version` to check if 
 Windows 10 can now find the path to python.exe.
 
-5.  (Optional) Send a complaint email to Microsoft asking why Windows 10 doesn't find python.exe in command prompt.
+5.  What happened is that somehow Windows 10 messed up the path for Python, such that Git Bash does not find
+python.exe and pip.exe. As such you have to manually specify a path for Git Bash using the special `.profile` file.
+Whenever Git Bash starts up, it will find the `.profile` file in the Windows user's root directory for extra 
+instructions on paths.
+
+6.  (Optional) Send a complaint email to Microsoft asking why Windows 10 doesn't find python.exe in Git Bash.
